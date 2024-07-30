@@ -1,0 +1,60 @@
+/*Construktors*/
+.construktors-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px 20px;
+    width: 100%;
+}
+
+.construktors-cart {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.construktors-cart-link {
+    display: block;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.construktors-cart-img {
+    height: 100%;
+    
+}
+
+.construktors-cart-body {
+    padding: 10px 15px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    min-height: 80px;  
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;  
+}
+
+.construktors-cart-link:hover + .construktors-cart-body{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.construktors-cart-title {
+    color: var(--color-white);
+    font-size: 28px;
+    font-weight: 500;  
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    max-height: 48px;
+    overflow: hidden; 
+    /*Для одной строки*/
+    /* text-overflow: ellipsis;
+    white-space: nowrap; */
+}
