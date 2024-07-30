@@ -41,7 +41,6 @@
 .about-gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 330px;
   gap: 10px;
   width: 80%;
 }
@@ -54,4 +53,26 @@
 
 .gallery-img:hover{
   opacity: 0.6;
+}
+
+@media screen and (max-width: 992px) {
+  .about-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .about-description {
+    width: 100%;
+  }
+
+  .about-gallery {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .about-gallery {
+    grid-template-columns: 1fr;
+  }
 }

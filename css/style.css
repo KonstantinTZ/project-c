@@ -577,6 +577,12 @@ body {
     text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+    .footer-title {
+        font-size: 20px;
+    }
+  }
+
 .footer-descr {
     text-align: center;
     color: var(--color-text-second);
