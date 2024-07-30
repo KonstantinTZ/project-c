@@ -1,0 +1,57 @@
+.about-wrapper {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.about-description {
+  width: 49%;
+  color: #404040;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5em;
+}
+
+.about-description-bold {
+  font-weight: bold;
+}
+
+.about-video {
+  width: 49%;
+}
+
+.about-list-description {
+  line-height: 0;
+}
+
+.about-list {
+  margin-bottom: 1em;
+  padding: 0;
+  list-style: none;
+  padding-left: 5px;
+}
+
+.about-item::before {
+  content: "\2013";
+  position: relative;
+  left: -5px;
+}
+
+.about-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 330px;
+  gap: 10px;
+  width: 80%;
+}
+
+.gallery-img{
+  border: 5px solid #fff;
+    border-radius: 50px;
+    transition: opacity .2s linear;
+}
+
+.gallery-img:hover{
+  opacity: 0.6;
+}

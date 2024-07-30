@@ -473,7 +473,7 @@ body {
     background-size: cover;
     height: 90px;
     width: 100%;
-    z-index: 1000;
+    z-index: 800;
     
 }
 
@@ -527,8 +527,8 @@ body {
 /*Banner*/
 .banner {
     margin: 0 auto;
-    height: 80px;
-    width: 300px;
+    max-width: 728px;
+    padding: 20px 0;
 }
 
 
@@ -554,7 +554,7 @@ body {
     height: 120px;
 }
 
-.footer__container {
+.footer-container {
     padding-top: 200px;
     padding-bottom: 50px;
     display: flex;
@@ -565,25 +565,25 @@ body {
     position: relative;
 }
 
-.footer__top {    
+.footer-top {    
     margin: 0 auto;
     width: 55%;      
 }
 
-.footer__title {
+.footer-title {
     margin-bottom: 20px;
     font-size: 36px;
     color: var(--color-red);
     text-align: center;
 }
 
-.footer__descr {
+.footer-descr {
     text-align: center;
     color: var(--color-text-second);
     font-weight: bold;
 }
 
-.footer__bottom {   
+.footer-bottom {   
     display: flex;
     align-items: center;
     justify-content: space-between;
