@@ -1,4 +1,8 @@
 /*Construktors*/
+.construktors {
+    margin-top: 100px;
+}
+
 .construktors-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
