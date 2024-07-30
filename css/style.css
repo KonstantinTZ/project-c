@@ -464,6 +464,19 @@ body {
     width: 100%;
 }
 
+.separator{
+    position:absolute;
+    bottom: -1px;
+    background-color: transparent;
+    background-image: url(../image/white-bg.png);
+    background-position: 50% 0;
+    background-size: cover;
+    height: 90px;
+    width: 100%;
+    z-index: 1000;
+    
+}
+
 /*Hero*/
 .hero {
     position: relative;   
