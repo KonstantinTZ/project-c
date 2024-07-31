@@ -1,0 +1,53 @@
+.event-title {
+  line-height: 1.2;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.event-content {
+  color: rgb(37, 37, 37);
+  font-size: 19px;
+  line-height: 27px;
+  font-family: NeueHaasUnica, HelveticaNeue, Helvetica, Arial, sans-serif;
+}
+
+.event-title {
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+
+.event-list {
+  margin: 0;
+  margin-bottom: 1.5em;
+}
+
+.event-descr {
+  margin-bottom: 1.5em;
+}
+
+.event-gallery-list {
+  margin: 0;
+  margin-bottom: 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 80%;
+}
+
+.event-gallery-item {
+  padding: 0;
+}
+
+.event-gallery-img {
+  border: 5px solid #fff;
+  border-radius: 50px;
+  transition: opacity .2s linear;
+}
+
+.event-gallery-img:hover {
+  opacity: 0.6;
+}
+
+.event-blue {
+  color: blue;
+}
