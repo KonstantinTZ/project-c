@@ -1,0 +1,19 @@
+.constructor {
+    margin-bottom: 100px;
+}
+
+.constructor-text {
+    margin-bottom: 24px;
+    color: var(--color-text-second);
+}
+
+.constructor-img {
+    margin-bottom: 24px;
+    max-width: 610px;
+    max-height: 510px;
+}
+
+.constructor-img img {  
+    border-radius: 50px;
+    max-height: inherit;
+}
