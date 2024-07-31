@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 :root {
-    --color-text: black;
+    --color-text: #000000; 
     --color-text-second: #666;
     --color-white: white;
     --color-red: #EE4C16;
@@ -36,6 +36,10 @@ h1, h2, h3, h4, h5, h6, p {
     --color-azure-light: #00C6E1;
     --color-green:#66993E;
     --color-grey: #ddd;
+    --color-sand:#E6E09B;
+    --color-green-heavy:#328C16;
+    --color-sand-light: #FFFCEA;
+
 }
 
 @font-face {
@@ -576,6 +580,12 @@ body {
     color: var(--color-red);
     text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+    .footer-title {
+        font-size: 20px;
+    }
+  }
 
 .footer-descr {
     text-align: center;
