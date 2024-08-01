@@ -21,13 +21,14 @@ document.addEventListener("DOMContentLoaded", () => {
               dayNamesShort: [ 'Пон', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс' ],
               dataTitles: { defaultDate: 'default', today : 'Сегодня' },
               notes: [
-                  { "date": "2024-08-02", "note": ["Natal"] },
-                  { "date": "2024-08-01", "note": ["Tahun Baru"] }
+                  // { "date": "2024-07-31", "note": ["Natal"] },
+                  { "date": "2024-08-01", "note": ["Конструктория в Тюмени","https://vk.com"] },
+                  { "date": "2024-08-07", "note": ["Конструктория в Иркутске","https://apple.com"] },
+                  { "date": "2024-08-10", "note": ["Конструктория в Москве","https://samsung.com"] }
                   ],
               showNotes: true,
-              startWeek: 'Воскресенье',
+              startWeek: 'monday',
               dayClick: function(date, view) {
-                console.log('viev =>',view);
               }
     });
 
@@ -43,5 +44,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // let now = new Date().toJSON().slice(0, 10)
   // console.log(typeof now)
+
+  // tippy('[data-tippy-content]');
+  tippy('[data-tippy-content]', {
+    content: 'Global content',
+    trigger: 'click',
+    interactive: true,
+    allowHTML: true,
+  });
 });
 

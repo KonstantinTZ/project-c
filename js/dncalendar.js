@@ -616,7 +616,16 @@
                               if (typeof settings.notes !== 'undefined') {
                                     if (dateIsNotes(new Date(year, month - 1, date))) {
                                           colDateClass += " note "
-                                          colDateTooltipAttr = `data-tooltip ="${settings.notes[i].note}"`
+                                          let thisMontMotesArr = getNotesThisMonth()
+                                          let thisDayNote = thisMontMotesArr.find((day) => day.date == date)
+
+                                          if (thisDayNote !== 'undefined') {
+
+                                                colDateTooltipAttr = `data-tippy-content ="<span><a href='${thisDayNote.notes[1]}'> ${thisDayNote.notes[0]}</a></span>"`
+                                                console.log('thisDayNote =>',thisDayNote)
+                                          }
+
+                                          
                                     }
                               }
 
