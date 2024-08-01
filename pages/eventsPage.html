@@ -5,6 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Construktoria</title>
+    <link rel="stylesheet" href="../css/dncalendar-skin.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="../js/dncalendar.js"></script>
+    <!-- <script type="text/javascript">
+		$(document).ready(function() {
+			var my_calendar = $("#dncalendar-container").dnCalendar({
+				minDate: "2017-01-01",
+				maxDate: "2018-12-02",
+				defaultDate: "2017-01-01",
+				monthNames: [ "Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember" ], 
+				monthNamesShort: [ 'Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des' ],
+				dayNames: [ 'Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'],
+                dayNamesShort: [ 'Min', 'Sen', 'Sel', 'Rab', 'Kam', 'Jum', 'Sab' ],
+                dataTitles: { defaultDate: 'default', today : 'hari ini' },
+                notes: [
+                		{ "date": "2017-01-01", "note": ["Natal"] },
+                		{ "date": "2017-05-12", "note": ["Tahun Baru"] }
+                		],
+                showNotes: true,
+                startWeek: 'monday',
+                dayClick: function(date, view) {
+                	alert(date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear());
+                }
+			});
+
+			// init calendar
+			my_calendar.build();
+
+			// update calendar
+			// my_calendar.update({
+			// 	minDate: "2016-01-05",
+			// 	defaultDate: "2016-05-04"
+			// });
+		});
+		</script> -->
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/events.css">
@@ -135,7 +170,7 @@
 
         <section class="events">
             <div class="container events container">
-                <div class="calendar">
+                <div class="calendar" id='dncalendar-container'>
 
                 </div>
 
@@ -178,7 +213,7 @@
             </div>
         </div>
     </footer>
-    <script src="../js/index.js"></script>
+    <script defer src="../js/index.js"></script>
 </body>
 
 </html>
