@@ -149,6 +149,7 @@
 .dncalendar-body table td.note,
 .dncalendar-body table td.calendarClick.note {
 	position: relative;
+    background-color:#bdbdbd
 }
 
 .dncalendar-body table td.note:before {
@@ -180,7 +181,8 @@
 }
 
 .dncalendar-note-list {
-    /* display: none; */
+    /* display: none; - что бы НЕ показывался блок под таблицей */
+    display: none;
 	list-style: none;
 	margin-left: 4.5%;
 	margin-bottom: 20px;
