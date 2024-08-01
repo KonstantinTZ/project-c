@@ -17,18 +17,23 @@ document.addEventListener("DOMContentLoaded", () => {
       defaultDate: "2017-01-01",
       monthNames: [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ], 
       monthNamesShort: [ 'Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек' ],
-      dayNames: [ 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'],
-              dayNamesShort: [ 'Пон', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс' ],
+      // !!! Начинать с воскресенья
+      dayNames: ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'], 
+              // !!! Начинать с воскресенья
+              dayNamesShort: [ 'Вс', 'Пон', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб' ],
               dataTitles: { defaultDate: 'default', today : 'Сегодня' },
               notes: [
-                  // { "date": "2024-07-31", "note": ["Natal"] },
+                  // решить проблему, если событие НЕ в ытом месяце
                   { "date": "2024-08-01", "note": ["Конструктория в Тюмени","https://vk.com"] },
                   { "date": "2024-08-07", "note": ["Конструктория в Иркутске","https://apple.com"] },
-                  { "date": "2024-08-10", "note": ["Конструктория в Москве","https://samsung.com"] }
+                  { "date": "2024-08-10", "note": ["Конструктория в Москве","https://samsung.com"] },
+                  { "date": "2024-08-30", "note": ["Лекция Семёна Егорова в Арт пространстве &laquo;Лекторий-Конструктория&raquo;","https://asus.com"] }
                   ],
               showNotes: true,
-              startWeek: 'monday',
+              // !!! здесь ПН, так надо !
+              startWeek: 'Monday',
               dayClick: function(date, view) {
+                // за это отвечает библиотека tippy
               }
     });
 
@@ -38,18 +43,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // update calendar
     my_calendar.update({
     	minDate: "2016-01-05",
-    	defaultDate: new Date().toJSON().slice(0, 10)
+    	defaultDate: new Date().toJSON().slice(0, 10),
     });
   });
 
-  // let now = new Date().toJSON().slice(0, 10)
-  // console.log(typeof now)
-
-  // tippy('[data-tippy-content]');
   tippy('[data-tippy-content]', {
     content: 'Global content',
     trigger: 'click',
     interactive: true,
+    appendTo: () => document.body,
     allowHTML: true,
   });
 });

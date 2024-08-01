@@ -25,3 +25,7 @@
 .events-link {
   color: var(--color-azure-light);
 }
+
+.tippy-link{
+  text-decoration: underline;
+}

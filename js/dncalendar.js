@@ -621,7 +621,7 @@
 
                                           if (thisDayNote !== 'undefined') {
 
-                                                colDateTooltipAttr = `data-tippy-content ="<span><a href='${thisDayNote.notes[1]}'> ${thisDayNote.notes[0]}</a></span>"`
+                                                colDateTooltipAttr = `data-tippy-content ="<span>ссылка на событие: <a href='${thisDayNote.notes[1]}' class='tippy-link'>${thisDayNote.notes[0]}</a></span>"`
                                                 console.log('thisDayNote =>',thisDayNote)
                                           }
 
@@ -807,7 +807,7 @@
             dayUseShortName: true,
             monthUseShortName: false,
             showNotes: true,
-            startWeek: 'Monday',
+            startWeek: 'Saturday',
             dayClick: function (date, view) { }
       }
 
