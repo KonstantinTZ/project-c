@@ -24,16 +24,20 @@ document.addEventListener("DOMContentLoaded", () => {
               dataTitles: { defaultDate: 'default', today : 'Сегодня' },
               notes: [
                   // решить проблему, если событие НЕ в ытом месяце
+                  { "date": "2024-07-31", "note": ["Лекция Семёна Егорова в Арт пространстве &laquo;Лекторий-Конструктория&raquo;","https://asus.com"] },
                   { "date": "2024-08-01", "note": ["Конструктория в Тюмени","https://vk.com"] },
                   { "date": "2024-08-07", "note": ["Конструктория в Иркутске","https://apple.com"] },
                   { "date": "2024-08-10", "note": ["Конструктория в Москве","https://samsung.com"] },
-                  { "date": "2024-08-30", "note": ["Лекция Семёна Егорова в Арт пространстве &laquo;Лекторий-Конструктория&raquo;","https://asus.com"] }
+                  { "date": "2024-08-30", "note": ["Лекция Семёна Егорова в Арт пространстве &laquo;Лекторий-Конструктория&raquo;","https://asus.com"] },
+                  { "date": "2024-09-10", "note": ["Лекция Семёна Егорова в Арт пространстве &laquo;Лекторий-Конструктория&raquo;","https://asus.com"] },
+                  
                   ],
               showNotes: true,
               // !!! здесь ПН, так надо !
               startWeek: 'Monday',
               dayClick: function(date, view) {
                 // за это отвечает библиотека tippy
+                // активируется на 697 строке dncalendar.js
               }
     });
 
@@ -47,12 +51,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  tippy('[data-tippy-content]', {
-    content: 'Global content',
-    trigger: 'click',
-    interactive: true,
-    appendTo: () => document.body,
-    allowHTML: true,
-  });
+  // tippy('[data-tippy-content]', {
+  //   content: 'Global content',
+  //   trigger: 'click',
+  //   interactive: true,
+  //   appendTo: () => document.body,
+  //   allowHTML: true,
+  // });
 });
 
