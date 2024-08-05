@@ -1,0 +1,105 @@
+.news-one {
+    margin: 20px 0 100px 0;
+}
+
+.news-one-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.news-one-title {
+    font-style: italic;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+/* .news-one-text:not(:last-child) {
+    margin-bottom: 20px;
+} */
+
+.news-one-media {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.news-one-img {
+    flex-basis: 25%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    height: 400px;
+}
+
+.news-one-img:nth-child(1) {
+    background-image: url(../image/constructors/event_1.jpg);
+}
+
+.news-one-img:nth-child(2) {
+    background-image: url(../image/constructors/event_5.jpg);
+}
+
+.news-one-box-title {
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+/*Список с тире*/
+.news-one-box-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;        
+    list-style-type:"– ";
+    padding-left: 10px;
+}
+
+/*Список с жирной точкой добавить класс dots*/
+.news-one-box-list.dots {
+    padding-left: 20px;
+    list-style: none;
+}
+
+.news-one-box-list.dots .news-one-box-item {
+    padding-left: 25px;
+    position: relative;
+}
+
+.news-one-box-list.dots
+.news-one-box-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color-text);
+}
+
+.news-one-box-link.active{
+    color: var(--color-azure-light);
+}
+
+.news-one-box-link.icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.news-one-box-link.icon::after {
+    content: '';
+    display: block;
+    background-image: url(../image/icon/icon-vk.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 35px;
+    height: 35px;    
+}
+
+.news-one-box-link:hover {
+    text-decoration: underline;
+}

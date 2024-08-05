@@ -1,0 +1,31 @@
+.contacts {
+    margin: 150px 0;
+}
+
+.contacts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contacts-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contacts-text {
+    color: var(--color-text-second);
+}
+
+.contacts-text.italik {
+    font-style: italic;
+}
+
+.contacts-link {
+    color: var(--color-azure-light);
+}
+
+.contacts-link:hover {
+    text-decoration: underline;
+}

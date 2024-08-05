@@ -1,0 +1,54 @@
+/*News*/
+.news {
+    margin: 100px 0;
+}
+.news-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.news-item {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
+    width: 100%;
+    
+}
+
+.news-item-img {
+    height: 300px;
+    cursor: pointer;
+}
+
+.news-item-img-small {
+    height: 150px;
+}
+
+.news-item-img {    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+}
+
+.news-item:nth-child(1) .news-item-img {
+    background-image: url(../image/constructors/event_1.jpg);
+}
+
+.news-item:nth-child(2) .news-item-img {
+    background-image: url(../image/constructors/event_5.jpg);
+}
+
+.news-item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.news-item-link {
+    font-size: 28px;
+    color: var(--color-azure-light);
+}
